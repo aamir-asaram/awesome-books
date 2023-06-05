@@ -1,6 +1,6 @@
-import { Bookshelf } from './modules/bookshelf.js';
-import { Book } from './modules/book.js';
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+import Bookshelf from './modules/bookshelf.js';
+import Book from './modules/book.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 const section = document.querySelector('.books');
 const contact = document.querySelector('#contact');
@@ -9,7 +9,7 @@ const bookShelf = new Bookshelf();
 const date = () => {
   const date = document.querySelector('#date');
   date.innerHTML = `${DateTime.now().toLocaleString(DateTime.DATE_MED)}, ${DateTime.now().toLocaleString(DateTime.TIME_WITH_SECONDS)}`;
-}
+};
 
 if (localStorage.getItem('booklist') !== null && localStorage.getItem('booklist').length > 0) {
   bookShelf.setBooklist(JSON.parse(localStorage.getItem('booklist')));
