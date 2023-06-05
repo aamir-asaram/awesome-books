@@ -1,4 +1,4 @@
-export class Bookshelf {
+export default class Bookshelf {
   constructor() {
     this.booklist = [];
     this.teal = true;

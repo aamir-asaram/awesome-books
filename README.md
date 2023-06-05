@@ -78,7 +78,9 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-None.
+```
+npm install
+```
 
 ### Usage
 

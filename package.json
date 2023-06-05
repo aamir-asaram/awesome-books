@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "luxon": "^3.3.0"
+  }
 }
 
